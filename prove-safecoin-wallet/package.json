@@ -1,0 +1,94 @@
+{
+  "_from": "@identity.com/prove-solana-wallet@^0.2.3",
+  "_id": "@identity.com/prove-solana-wallet@0.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-Q06MFpVIZ2b+nGMxT1+rt5R+b9dAefJFqYUf3zUpJ1YMGpzblAhsLcUW/dKm8cFhAdc5YsFcTqzo+YyUbOkOtg==",
+  "_location": "/@identity.com/prove-solana-wallet",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@identity.com/prove-solana-wallet@^0.2.3",
+    "name": "@identity.com/prove-solana-wallet",
+    "escapedName": "@identity.com%2fprove-solana-wallet",
+    "scope": "@identity.com",
+    "rawSpec": "^0.2.3",
+    "saveSpec": null,
+    "fetchSpec": "^0.2.3"
+  },
+  "_requiredBy": [
+    "/@civic/solana-gateway-react"
+  ],
+  "_resolved": "https://registry.npmjs.org/@identity.com/prove-solana-wallet/-/prove-solana-wallet-0.2.5.tgz",
+  "_shasum": "6884e7657969a38ea0bf20d2ad5c7642161ce183",
+  "_spec": "@identity.com/prove-solana-wallet@^0.2.3",
+  "_where": "/home/cct/Desktop/node_modules/@civic/safecoin-gateway-react",
+  "author": {
+    "name": "Daniel Kelleher",
+    "email": "daniel@identity.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@safecoin/web3.js": "^1.29.3",
+    "bs58": "^4.0.1"
+  },
+  "deprecated": false,
+  "description": "Prove ownership of a Safecoin wallet.",
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.2",
+    "@types/bs58": "^4.0.1",
+    "husky": "^7.0.1",
+    "size-limit": "^5.0.2",
+    "ts-node": "^10.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "jest": {
+    "testTimeout": 30000
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/prove-safecoin-wallet.esm.js",
+  "name": "@identity.com/prove-safecoin-wallet",
+  "peerDependencies": {},
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "tsdx build",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "start": "tsdx watch",
+    "test": "tsdx test"
+  },
+  "size-limit": [
+    {
+      "path": "dist/prove-solana-wallet.cjs.production.min.js",
+      "limit": "200 KB"
+    },
+    {
+      "path": "dist/prove-solana-wallet.esm.js",
+      "limit": "200 KB"
+    }
+  ],
+  "typings": "dist/index.d.ts",
+  "version": "0.2.5"
+}
